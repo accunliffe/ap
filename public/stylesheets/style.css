@@ -1,0 +1,50 @@
+@import '//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.1/css/bootstrap.min.css';
+body {
+  overflow: none;
+  background: url("/images/graypoly.png") center center fixed;
+  background-size: cover;
+  background-position: left top;
+}
+.sitewrapper {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  overflow: none;
+}
+.container-fluid {
+  margin: 0;
+  padding: 0;
+  height: 1200px;
+}
+.topdiv {
+  background-color: rgba(201,201,199,0.99);
+  height: auto;
+  width: auto;
+  margin: auto;
+}
+.siteline {
+  position: absolute;
+  height: auto;
+  width: 100%;
+  background-color: rgba(201,201,199,0.9);
+  margin: 100px auto 0 auto;
+  text-align: center;
+  z-index: 1;
+}
+video#vid {
+  position: relative;
+  width: 100%;
+  eight: 100%;
+  background: url("/images/jump.jpg") no-repeat;
+  background-size: cover;
+}
+.maindiv {
+  position: relative;
+  display: inline-block;
+  background-color: rgba(201,201,199,0.99);
+  height: auto;
+  width: 100%;
+  margin: auto;
+  overflow: none;
+}
