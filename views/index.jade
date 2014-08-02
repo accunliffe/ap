@@ -2,13 +2,15 @@ extends layout
 
 block content
   .container-fluid.sitewrapper    
-    .topdiv
-      .siteline Andrew Cunliffe Design Engineer     
-      video#vid.header-unit(autoplay='', loop='', poster='/images/jump.jpg')
-          source(src='/videos/jump.webm', type='video/webm')
-          source(src='/videos/jump.mp4', type='video/mp4')
-    
-  .maindiv.jumbotron words words words
+     .container-fluid.topdiv
+      .vidcover
+        img#logo(src='/images/logo2.png')                              
+      video#vid.container-fluid(autoplay='', loop='', poster='/images/jump.jpg')
+        source(src='/videos/jump.webm', type='video/webm') 
+    .strapline Andrew Cunliffe Design Engineer        
+  .maindiv
+    .navbar words words words
+    .jumbotron#main words words words
       
   script(src='/javascripts/jquery/jquery-2.0.3.min.js')
   script(src="/javascripts/jquery.scrollTo.js") 
