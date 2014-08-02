@@ -2,14 +2,13 @@ extends layout
 
 block content
   .container-fluid.sitewrapper
-    .vidcover
+    .vidcover.visible-desktop
       img#logo(src='/images/logo2.png')
-      h1 Andrew Cunliffe Design Engineer                              
-    video#vid.container-fluid(autoplay='', loop='', poster='/images/jump.jpg')
+      h3 Andrew Cunliffe Design Engineer                              
+    video#vid.visible-desktop(autoplay='', loop='', poster='/images/jump.jpg')
       source(src='/videos/jump.webm', type='video/webm')   
-  .maindiv
-    h1.strapline Andrew Cunliffe Design Engineer
-    .navbar words words words
+  .container-fluid.maindiv
+    nav.navbar.navbar-default(role='navigation') words words words
     .jumbotron#main words words words
       
   script(src='/javascripts/jquery/jquery-2.0.3.min.js')
