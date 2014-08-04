@@ -7,7 +7,7 @@ block content
       h2 Andrew Cunliffe Design Engineer                              
     video#vid.visible-desktop(autoplay='', loop='', poster='/images/jump1.png')
       source(src='/videos/jump.webm', type='video/webm')   
-  .container-fluid.maindiv#main
+  .container-fluid.maindiv#main.hidden-phone
     nav#nav.navbar.navbar-default.row-fluid(role='navigation')
       .rmenu
         img.logo3(src='/images/logo3.png')
@@ -46,13 +46,13 @@ block content
               .form-group
                 label(for='exampleInputPassword1') Password
                 input#exampleInputPassword1.form-control(type='passwor', placeholder='Password')
-    .container-fluid
+    .container-fluid#wrap
       .content.container-fluid
         #div1.pbox First Div
         #div2.pbox Second Div
         #div3.pbox Third Div
         #div4.pbox Fourth Div
-    nav#footer.navbar.navbar-default.row-fluid
+    nav#footer.navbar.row-fluid
   .container-fluid.maindiv.hidden-desktop
     nav#nav.navbar.navbar-default.row-fluid(role='navigation')
       .rmenu
@@ -92,18 +92,21 @@ block content
               .form-group
                 label(for='exampleInputPassword1') Password
                 input#exampleInputPassword1.form-control(type='passwor', placeholder='Password')
-    .container-fluid
+    .container-fluid#wrapm
       .content.container-fluid
         #div1.pbox First Div
         #div2.pbox Second Div
         #div3.pbox Third Div
         #div4.pbox Fourth Div
-    nav#footer.navbar.navbar-default.row-fluid
+    nav#footer.navbar.row-fluid
       
   script(src='/javascripts/jquery/jquery-2.0.3.min.js')
   script(src="/javascripts/jquery.scrollTo.js") 
   script(src="/javascripts/jquery.localScroll.js")
   script(src="/javascripts/bootstrap.min.js")
+
+  script.
+    window.onload = function () {}
 
   script.
     $(document).ready(function () {
@@ -114,14 +117,14 @@ block content
         // fade in new selected subcontent
         $('.pbox[id=' + $(this).attr('data-id') + ']').show(600);
     });
-    });  
-  script.
-    $('#logo').click(function() {
-    $('#trigger').fadeOut(800, function() { $(this).remove(); });
     });
   script.
     $('#logo').click(function() {
-    $('#vid').fadeOut(800, function() { $(this).remove(); });
+    $('#trigger').fadeOut(1000, function() { $(this).remove(); });
+    });
+  script.
+    $('#logo').click(function() {
+    $('#vid').fadeOut(1000, function() { $(this).remove(); });
     });  
   script.
     $('#logo').click(function() {
