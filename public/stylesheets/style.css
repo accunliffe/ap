@@ -1,9 +1,7 @@
 @import '//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.1/css/bootstrap.min.css';
-@media (max-width: 767px) {
-  body {
-    padding-right: 0;
-    padding-left: 0;
-  }
+@font-face {
+  font-family: 'leagueG';
+  src: url("/fonts/League-Gothic-Regular.otf");
 }
 body {
   overflow: none;
@@ -43,28 +41,15 @@ body {
   text-align: center;
   display: block;
 }
+.vidcover.visible-desktop h2 {
+  font-family: 'leagueG';
+  text-shadow: 0px 0px 1px #f5f36a, 0px 0px 1px #f5f36a;
+}
 img#logo {
   display: inline-block;
   vertical-align: middle;
   text-align: center;
   padding-top: 20%;
-}
-.bigwords {
-  font-size: 100%;
-}
-.top-line {
-  height: auto;
-  width: 100%;
-  display: table;
-  text-align: center;
-}
-.strapline {
-  height: auto;
-  width: 100%;
-  background-color: rgba(201,201,199,0.99);
-  margin: 0;
-  padding: 60px 0 60px 0;
-  text-align: center;
 }
 video#vid {
   position: relative;
@@ -72,8 +57,6 @@ video#vid {
   height: 10%;
   background: url("/images/jump.jpg") no-repeat;
   background-size: cover;
-  margin: 0 0 -20px 0;
-  padding-bottom: -20px;
 }
 .maindiv {
   position: relative;
@@ -84,10 +67,76 @@ video#vid {
   overflow: none;
   z-index: 1;
   padding: 0;
+  display: inline-block;
+}
+#nav {
+  background-color: rgba(201,201,199,0.85);
+  border: 1px solid #e67820;
+}
+img.pointer {
+  float: right;
+  display: inline-block;
+  cursor: pointer;
+}
+img.logo3 {
+  float: left;
+  display: inline-block;
+  padding-top: 7px;
+  padding-left: 20px;
+}
+h3.navtext {
+  display: inline-block;
+  padding-left: 30px;
+  font-family: 'leagueG';
+  margin-top: 15px;
+  text-shadow: 0px 0px 1px #f5f36a, 0px 0px 1px #f5f36a;
+}
+ul.dropdown-menu {
+  background-color: rgba(201,201,199,0.85);
+  margin-right: 20px;
+  border: 1px solid #e67820;
+}
+ul li.divider {
+  border: 1px solid #e67820;
+}
+.dropdown-menu li a {
+  -webkit-font-smoothing: antialiased;
+  text-shadow: 0px 0px 0.5px #f5f36a, 0px 0px 0.5px #f5f36a;
+}
+.form-group > label {
+  margin: 0 5% 0 5%;
+  width: 90%;
+  color: #333;
+  text-shadow: 0px 0px 1px #f5f36a, 0px 0px 1px #f5f36a, 0px 0px 1px #f5f36a;
+  margin-bottom: 10px;
+  -webkit-font-smoothing: antialiased;
+}
+input#exampleInputEmail1 {
+  margin: 0 5% 0 5%;
+  width: 90%;
+  border: 1px solid #e67820;
+}
+input#exampleInputPassword1 {
+  margin: 0 5% 0 5%;
+  width: 90%;
+  border: 1px solid #e67820;
 }
 .jumbotron#main {
   position: relative;
   background-color: rgba(201,201,199,0.01);
   display: block;
-  height: 1200px;
+  height: 1000px;
+}
+.content {
+  height: 80%;
+  width: 80%;
+  position: relative;
+  background-color: rgba(201,201,199,0.85);
+  margin: 0 auto 0 auto;
+  border: 1px solid #e67820;
+}
+#footer {
+  background-color: rgba(201,201,199,0.85);
+  border: 1px solid #e67820;
+  height: 100px;
 }

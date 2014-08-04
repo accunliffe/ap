@@ -4,12 +4,51 @@ block content
   .container-fluid.sitewrapper
     .vidcover.visible-desktop
       img#logo(src='/images/logo2.png')
-      h3 Andrew Cunliffe Design Engineer                              
-    video#vid.visible-desktop(autoplay='', loop='', poster='/images/jump.jpg')
+      h2 Andrew Cunliffe Design Engineer                              
+    video#vid.visible-desktop(autoplay='', loop='', poster='/images/jump.png')
       source(src='/videos/jump.webm', type='video/webm')   
   .container-fluid.maindiv
-    nav.navbar.navbar-default(role='navigation') words words words
-    .jumbotron#main words words words
+    nav#nav.navbar.navbar-default.row-fluid(role='navigation')
+      .rmenu
+        img.logo3(src='/images/logo3.png')
+        h3.navtext.hidden-phone Andrew Cunliffe Design Engineer 
+        img.pointer(type='button', data-toggle='dropdown', src='/images/3lines.png')
+        ul.dropdown-menu.dropdown-menu-right(role='menu', aria-labelledby='dropdownMenu1')
+          li.divider(role='presentation')
+          li(role='presentation')  
+            form(role='form')
+              .form-group
+                input#exampleInputEmail1.form-control(type='search', placeholder='Search')
+          li.divider(role='presentation')
+          li(role='presentation')
+            a(role='menuitem', tabindex='-1', href='#') Dictionary
+          li.divider(role='presentation')
+          li(role='presentation')
+            a(role='menuitem', tabindex='-1', href='#') Thesarus  
+          li.divider(role='presentation')
+          li(role='presentation')
+            a(role='menuitem', tabindex='-1', href='#') Word Dynamo
+          li.divider(role='presentation')
+          li(role='presentation')
+            a(role='menuitem', tabindex='-1', href='#') Quotes
+          li.divider(role='presentation')
+          li(role='presentation')
+            a(role='menuitem', tabindex='-1', href='#') Reference
+          li.divider(role='presentation')
+          li(role='presentation')
+            a(role='menuitem', tabindex='-1', href='#') Translator
+          li.divider(role='presentation')
+          li(role='presentation')  
+            form(role='form')
+              .form-group
+                label(for='exampleInputEmail1') Email address
+                input#exampleInputEmail1.form-control(type='emai', placeholder='Enter email')
+              .form-group
+                label(for='exampleInputPassword1') Password
+                input#exampleInputPassword1.form-control(type='passwor', placeholder='Password')
+    .jumbotron#main.container-fluid
+      .content.container-fluid words words words
+    nav#footer.navbar.navbar-default.row-fluid
       
   script(src='/javascripts/jquery/jquery-2.0.3.min.js')
   script(src="/javascripts/jquery.scrollTo.js") 
