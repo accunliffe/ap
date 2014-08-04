@@ -46,6 +46,13 @@ block content
               .form-group
                 label(for='exampleInputPassword1') Password
                 input#exampleInputPassword1.form-control(type='passwor', placeholder='Password')
+    .container-fluid
+      .content.container-fluid
+        #div1.pbox First Div
+        #div2.pbox Second Div
+        #div3.pbox Third Div
+        #div4.pbox Fourth Div
+    nav#footer.navbar.navbar-default.row-fluid
   .container-fluid.maindiv.hidden-desktop
     nav#nav.navbar.navbar-default.row-fluid(role='navigation')
       .rmenu
@@ -85,7 +92,7 @@ block content
               .form-group
                 label(for='exampleInputPassword1') Password
                 input#exampleInputPassword1.form-control(type='passwor', placeholder='Password')
-    .jumbotron#main.container-fluid
+    .container-fluid
       .content.container-fluid
         #div1.pbox First Div
         #div2.pbox Second Div
@@ -106,7 +113,7 @@ block content
         $('.pbox:visible').hide(600);
         // fade in new selected subcontent
         $('.pbox[id=' + $(this).attr('data-id') + ']').show(600);
-        });
+    });
     });  
   script.
     $('#logo').click(function() {
@@ -115,12 +122,9 @@ block content
   script.
     $('#logo').click(function() {
     $('#vid').fadeOut(800, function() { $(this).remove(); });
-    });
-  script.
-    $(function() {
-    $('#main').hide();
-    });
+    });  
   script.
     $('#logo').click(function() {
     $('#main').fadeIn(3000, function() { $(this).add(); });
     });
+  
