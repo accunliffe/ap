@@ -45,7 +45,46 @@ block content
                 input#exampleInputEmail1.form-control(type='emai', placeholder='Enter email')
               .form-group
                 label(for='exampleInputPassword1') Password
-                input#exampleInputPassword1.form-control(type='passwor', placeholder='Password')      
+                input#exampleInputPassword1.form-control(type='passwor', placeholder='Password')
+  .container-fluid.maindiv.hidden-desktop
+    nav#nav.navbar.navbar-default.row-fluid(role='navigation')
+      .rmenu
+        img.logo3(src='/images/logo3.png')
+        h3.navtext.hidden-phone Andrew Cunliffe Design Engineer 
+        img.pointer(type='button', data-toggle='dropdown', src='/images/3lines.png')
+        ul#menu.dropdown-menu.dropdown-menu-right(role='menu', aria-labelledby='dropdownMenu1')
+          li.divider(role='presentation')
+          li(role='presentation')  
+            form(role='form')
+              .form-group
+                input#exampleInputEmail1.form-control(type='search', placeholder='Search')
+          li.divider(role='presentation')
+          li(role='presentation')
+            a(role='menuitem', tabindex='-1', href='#', data-id='div2') Dictionary
+          li.divider(role='presentation')
+          li(role='presentation')
+            a(role='menuitem', tabindex='-1', href='#') Thesarus  
+          li.divider(role='presentation')
+          li(role='presentation')
+            a(role='menuitem', tabindex='-1', href='#') Word Dynamo
+          li.divider(role='presentation')
+          li(role='presentation')
+            a(role='menuitem', tabindex='-1', href='#') Quotes
+          li.divider(role='presentation')
+          li(role='presentation')
+            a(role='menuitem', tabindex='-1', href='#') Reference
+          li.divider(role='presentation')
+          li(role='presentation')
+            a(role='menuitem', tabindex='-1', href='#') Translator
+          li.divider(role='presentation')
+          li(role='presentation')  
+            form(role='form')
+              .form-group
+                label(for='exampleInputEmail1') Email address
+                input#exampleInputEmail1.form-control(type='emai', placeholder='Enter email')
+              .form-group
+                label(for='exampleInputPassword1') Password
+                input#exampleInputPassword1.form-control(type='passwor', placeholder='Password')
     .jumbotron#main.container-fluid
       .content.container-fluid
         #div1.pbox First Div
