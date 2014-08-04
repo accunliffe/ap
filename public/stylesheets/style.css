@@ -9,6 +9,12 @@ body {
   background-size: cover;
   background-position: left top;
 }
+.pbox {
+  display: none;
+}
+#div1 {
+  display: block;
+}
 .sitewrapper {
   position: relative;
   height: 100%;
@@ -44,12 +50,14 @@ body {
 .vidcover.visible-desktop h2 {
   font-family: 'leagueG';
   text-shadow: 0px 0px 1px #f5f36a, 0px 0px 1px #f5f36a;
+  -webkit-font-smoothing: antialiased;
 }
 img#logo {
   display: inline-block;
   vertical-align: middle;
   text-align: center;
   padding-top: 20%;
+  cursor: pointer;
 }
 video#vid {
   position: relative;
@@ -90,6 +98,7 @@ h3.navtext {
   font-family: 'leagueG';
   margin-top: 15px;
   text-shadow: 0px 0px 1px #f5f36a, 0px 0px 1px #f5f36a;
+  -webkit-font-smoothing: antialiased;
 }
 ul.dropdown-menu {
   background-color: rgba(201,201,199,0.85);
@@ -125,10 +134,10 @@ input#exampleInputPassword1 {
   position: relative;
   background-color: rgba(201,201,199,0.01);
   display: block;
-  height: 1000px;
+  height: auto;
 }
 .content {
-  height: 80%;
+  height: 400px;
   width: 80%;
   position: relative;
   background-color: rgba(201,201,199,0.85);
@@ -139,4 +148,5 @@ input#exampleInputPassword1 {
   background-color: rgba(201,201,199,0.85);
   border: 1px solid #e67820;
   height: 100px;
+  margin-top: 20px;
 }
