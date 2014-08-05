@@ -4,101 +4,88 @@ block content
   .container-fluid.sitewrapper
     .vidcover.visible-desktop#trigger
       img#logo(src='/images/logo2.png')
-      h2 Andrew Cunliffe Design Engineer                              
+      h1 Andrew Cunliffe Design Engineer                              
     video#vid.visible-desktop(autoplay='', loop='', poster='/images/jump1.png')
       source(src='/videos/jump.webm', type='video/webm')   
-  .container-fluid.maindiv#main.hidden-phone
-    nav#nav.navbar.navbar-default.row-fluid(role='navigation')
+  .container-fluid.maindiv#main.hidden-phone.hidden-tablet
+    nav#nav.navbar.row-fluid(role='navigation')
       .rmenu
         img.logo3(src='/images/logo3.png')
-        h3.navtext.hidden-phone Andrew Cunliffe Design Engineer 
+        h1.navtext.hidden-phone Andrew Cunliffe Design Engineer 
         img.pointer(type='button', data-toggle='dropdown', src='/images/3lines.png')
         ul#menu.dropdown-menu.dropdown-menu-right(role='menu', aria-labelledby='dropdownMenu1')
-          li.divider(role='presentation')
-          li(role='presentation')  
-            form(role='form')
-              .form-group
-                input#exampleInputEmail1.form-control(type='search', placeholder='Search')
-          li.divider(role='presentation')
-          li(role='presentation')
-            a(role='menuitem', tabindex='-1', href='#', data-id='div2') Dictionary
-          li.divider(role='presentation')
-          li(role='presentation')
-            a(role='menuitem', tabindex='-1', href='#') Thesarus  
-          li.divider(role='presentation')
-          li(role='presentation')
-            a(role='menuitem', tabindex='-1', href='#') Word Dynamo
-          li.divider(role='presentation')
-          li(role='presentation')
-            a(role='menuitem', tabindex='-1', href='#') Quotes
-          li.divider(role='presentation')
-          li(role='presentation')
-            a(role='menuitem', tabindex='-1', href='#') Reference
-          li.divider(role='presentation')
-          li(role='presentation')
-            a(role='menuitem', tabindex='-1', href='#') Translator
-          li.divider(role='presentation')
-          li(role='presentation')  
-            form(role='form')
-              .form-group
-                label(for='exampleInputEmail1') Email address
-                input#exampleInputEmail1.form-control(type='emai', placeholder='Enter email')
-              .form-group
-                label(for='exampleInputPassword1') Password
-                input#exampleInputPassword1.form-control(type='passwor', placeholder='Password')
-    .container-fluid#wrap
-      .content.container-fluid
-        #div1.pbox First Div
-        #div2.pbox Second Div
-        #div3.pbox Third Div
-        #div4.pbox Fourth Div
-    nav#footer.navbar.row-fluid
-  .container-fluid.maindiv.hidden-desktop
-    nav#nav.navbar.navbar-default.row-fluid(role='navigation')
-      .rmenu
-        img.logo3(src='/images/logo3.png')
-        h3.navtext.hidden-phone Andrew Cunliffe Design Engineer 
-        img.pointer(type='button', data-toggle='dropdown', src='/images/3lines.png')
-        ul#menu.dropdown-menu.dropdown-menu-right(role='menu', aria-labelledby='dropdownMenu1')
-          li.divider(role='presentation')
-          li(role='presentation')  
-            form(role='form')
-              .form-group
-                input#exampleInputEmail1.form-control(type='search', placeholder='Search')
-          li.divider(role='presentation')
           li(role='presentation')
             a(role='menuitem', tabindex='-1', href='#', data-id='div1') About Me
           li.divider(role='presentation')
           li(role='presentation')
-            a(role='menuitem', tabindex='-1', href='#', data-id='div2') Omigraffle Web Design  
+            a(role='menuitem', tabindex='-1', href='#', data-id='div2') Web and Mobile Design  
           li.divider(role='presentation')
           li(role='presentation')
-            a(role='menuitem', tabindex='-1', href='#') Site Redesigns
+            a(role='menuitem', tabindex='-1', href='#', data-id='div3') Built From Mockups
           li.divider(role='presentation')
           li(role='presentation')
-            a(role='menuitem', tabindex='-1', href='#') Quotes
+            a(role='menuitem', tabindex='-1', href='#', data-id='div4') Logo Design
           li.divider(role='presentation')
           li(role='presentation')
-            a(role='menuitem', tabindex='-1', href='#') Reference
+            a(role='menuitem', tabindex='-1', href='#', data-id='div5') Responsive
           li.divider(role='presentation')
           li(role='presentation')
-            a(role='menuitem', tabindex='-1', href='#') Translator
-          li.divider(role='presentation')
-          li(role='presentation')  
-            form(role='form')
-              .form-group
-                label(for='exampleInputEmail1') Email address
-                input#exampleInputEmail1.form-control(type='emai', placeholder='Enter email')
-              .form-group
-                label(for='exampleInputPassword1') Password
-                input#exampleInputPassword1.form-control(type='passwor', placeholder='Password')
-    .container-fluid#wrapm
-      .content.container-fluid
-        #div1.pbox First Div
+            a(role='menuitem', tabindex='-1', href='#', data-id='div6') Reach Out                    
+    .container-fluid#wrap
+      .main-content.container-fluid
+        #div1.contentdiv.pbox About Me
+          p.content-text I grew up in Marin County, CA. I joined the army as soon as I could, and left for basic training a week after turning 18. After basic and Airborne School, I went to Fort Bragg, NC, where I was an airborne infantryman in the 82nd Airborne Division. I completed two tours in Iraq, one during the invasion, which I left for, only 28 days after arriving at Bragg.
+          .container-fluid
+            img#img-wrapper.img-responsive.img-rounded.img-scale(src='/images/cemetary.jpg' alt= 'army')
+          p.content-text My degree is in Finance, and thought I wanted to be an analyst, trader, what have you, but that’s not what I want to do. I want to build amazing, beautiful, technology, and tech companies. My future dream beyond this one, is to advise, mentor, and fund veteran spawned tech companies.
+          .container-fluid
+            img#img-wrapper.img-responsive.img-rounded.img-scale(src='/images/me.png' alt= 'me')     
         #div2.pbox Second Div
         #div3.pbox Third Div
         #div4.pbox Fourth Div
-    nav#footer.navbar.row-fluid
+        #div5.pbox Fifth Div
+        #div6.pbox Sixth Div
+    nav.navbar#footer.row-fluid
+
+  .container-fluid.maindiv.show-phone.show-tablet.hidden-desktop
+    nav#nav.navbar.navbar-default.row-fluid(role='navigation')
+      .rmenu
+        img.logo3(src='/images/logo3.png')
+        h3.navtext.hidden-phone Andrew Cunliffe Design Engineer 
+        img.pointer(type='button', data-toggle='dropdown', src='/images/3lines.png')
+        ul#menu1.dropdown-menu.dropdown-menu-right(role='menu', aria-labelledby='dropdownMenu1')
+          li(role='presentation')
+            a(role='menuitem', tabindex='-1', href='#', data-id='div1') About Me
+          li.divider(role='presentation')
+          li(role='presentation')
+            a(role='menuitem', tabindex='-1', href='#', data-id='div2') Web and Mobile Design  
+          li.divider(role='presentation')
+          li(role='presentation')
+            a(role='menuitem', tabindex='-1', href='#', data-id='div3') Built From Mockups
+          li.divider(role='presentation')
+          li(role='presentation')
+            a(role='menuitem', tabindex='-1', href='#', data-id='div4') Logo Design
+          li.divider(role='presentation')
+          li(role='presentation')
+            a(role='menuitem', tabindex='-1', href='#', data-id='div5') Responsive
+          li.divider(role='presentation')
+          li(role='presentation')
+            a(role='menuitem', tabindex='-1', href='#', data-id='div6') Reach Out
+    .container-fluid#wrapm
+      .main-content.container-fluid
+        #div1.contentdiv.pbox About Me
+          p.content-textm I grew up in Marin County, CA. I joined the army as soon as I could, and left for basic training a week after turning 18. After basic and Airborne School, I went to Fort Bragg, NC, where I was an airborne infantryman in the 82nd Airborne Division. I completed two tours in Iraq, one during the invasion, which I left for, only 28 days after arriving at Bragg.
+          .container-fluid
+            img#img-wrapperm.img-responsive.img-rounded(src='/images/cemetary.jpg' alt= 'army')
+          p.content-textm My degree is in Finance, and thought I wanted to be an analyst, trader, what have you, but that’s not what I want to do. I want to build amazing, beautiful, technology, and tech companies. My future dream beyond this one, is to advise, mentor, and fund veteran spawned tech companies.
+          .container-fluid
+            img#img-wrapperm.img-responsive.img-rounded(src='/images/me.png' alt= 'me')
+        #div2.pbox Second Div
+        #div3.pbox Third Div
+        #div4.pbox Fourth Div
+        #div5.pbox Fifth Div
+        #div6.pbox Sixth Div
+    nav.navbar#footer.row-fluid
       
   script(src='/javascripts/jquery/jquery-2.0.3.min.js')
   script(src="/javascripts/jquery.scrollTo.js") 
@@ -113,21 +100,31 @@ block content
     $('#menu').on('click', 'a', function () {
         $('.current').not($(this).closest('li').addClass('current')).removeClass('current');
         // fade out all open subcontents
-        $('.pbox:visible').hide(600);
+        $('.pbox:visible').hide(800);
         // fade in new selected subcontent
-        $('.pbox[id=' + $(this).attr('data-id') + ']').show(600);
+        $('.pbox[id=' + $(this).attr('data-id') + ']').show(800);
+    });
+    });
+  script.
+    $(document).ready(function () {
+    $('#menu1').on('click', 'a', function () {
+        $('.current').not($(this).closest('li').addClass('current')).removeClass('current');
+        // fade out all open subcontents
+        $('.pbox:visible').hide(800);
+        // fade in new selected subcontent
+        $('.pbox[id=' + $(this).attr('data-id') + ']').show(800);
     });
     });
   script.
     $('#logo').click(function() {
-    $('#trigger').fadeOut(1000, function() { $(this).remove(); });
+    $('#trigger').fadeOut(1500, 'swing', function() { $(this).remove(); });
     });
   script.
     $('#logo').click(function() {
-    $('#vid').fadeOut(1000, function() { $(this).remove(); });
+    $('#vid').fadeOut(1500, 'swing', function() { $(this).remove(); });
     });  
   script.
     $('#logo').click(function() {
-    $('#main').fadeIn(3000, function() { $(this).add(); });
+    $('#main').fadeIn(4000, 'swing', function() { $(this).add(); });
     });
   
