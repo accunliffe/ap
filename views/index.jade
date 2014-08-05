@@ -39,13 +39,17 @@ block content
             img#img-wrapper.img-responsive.img-rounded.img-scale(src='/images/cemetary.jpg' alt= 'army')
           p.content-text My degree is in Finance, and thought I wanted to be an analyst, trader, what have you, but that’s not what I want to do. I want to build amazing, beautiful, technology, and tech companies. My future dream beyond this one, is to advise, mentor, and fund veteran spawned tech companies.
           .container-fluid
-            img#img-wrapper.img-responsive.img-rounded.img-scale(src='/images/me.png' alt= 'me')     
+            img#img-wrapper.img-responsive.img-rounded.img-scale(src='/images/me.png' alt= 'me')
+          p.content-text What I've been doing recently   
         #div2.pbox Second Div
         #div3.pbox Third Div
         #div4.pbox Fourth Div
         #div5.pbox Fifth Div
         #div6.pbox Sixth Div
     nav.navbar#footer.row-fluid
+      .iconwrap
+        p#float-l Connect With Me on LinkedIn
+        a.linkedin-icon(href='https://www.linkedin.com/in/cunliffeandrew', target='_blank')
 
   .container-fluid.maindiv.show-phone.show-tablet.hidden-desktop
     nav#nav.navbar.navbar-default.row-fluid(role='navigation')
@@ -80,12 +84,16 @@ block content
           p.content-textm My degree is in Finance, and thought I wanted to be an analyst, trader, what have you, but that’s not what I want to do. I want to build amazing, beautiful, technology, and tech companies. My future dream beyond this one, is to advise, mentor, and fund veteran spawned tech companies.
           .container-fluid
             img#img-wrapperm.img-responsive.img-rounded(src='/images/me.png' alt= 'me')
+          p.content-textm What I've been doing recently
         #div2.pbox Second Div
         #div3.pbox Third Div
         #div4.pbox Fourth Div
         #div5.pbox Fifth Div
         #div6.pbox Sixth Div
     nav.navbar#footer.row-fluid
+      .iconwrap
+        p#float-l Connect With Me on LinkedIn
+        a.linkedin-icon(href='https://www.linkedin.com/in/cunliffeandrew', target='_blank')
       
   script(src='/javascripts/jquery/jquery-2.0.3.min.js')
   script(src="/javascripts/jquery.scrollTo.js") 
@@ -116,15 +124,21 @@ block content
     });
     });
   script.
+    $(document).ready(function () {
     $('#logo').click(function() {
     $('#trigger').fadeOut(1500, 'swing', function() { $(this).remove(); });
     });
+    });
   script.
+    $(document).ready(function () {
     $('#logo').click(function() {
     $('#vid').fadeOut(1500, 'swing', function() { $(this).remove(); });
+    });
     });  
   script.
+    $(document).ready(function () {
     $('#logo').click(function() {
-    $('#main').fadeIn(4000, 'swing', function() { $(this).add(); });
+    $('#main').fadeIn(3000, 'swing', function() { $(this).add(); });
+    });
     });
   
