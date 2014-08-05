@@ -9,7 +9,9 @@ body
   background-size cover
   background-position left top
   
-  
+ #main
+  display none
+
 .pbox
   display none
 
@@ -81,6 +83,8 @@ video#vid
 #nav
   background-color: rgba(201,201,199,0.85);
   border 1px solid #e67820
+  position fixed
+  z-index 1
 
 img.pointer
   float right
@@ -122,11 +126,11 @@ ul
 
 .container-fluid#wrap
   height auto
-  margin 40px 0 0 0
+  margin 100px 0 0 0
 
 .container-fluid#wrapm
   height auto
-  margin 40px 0 0 0
+  margin 100px 0 0 0
 
 .main-content
   height 100%
@@ -153,6 +157,14 @@ p.content-text
   font-family:'leagueG'
   margin 0 30px 0 30px
   text-align justify
+  font-size 80%
+  padding 15px 0 20px 0
+  text-shadow none
+
+p.content-text-c
+  font-family:'leagueG'
+  margin 0 30px 0 30px
+  text-align center
   font-size 80%
   padding 15px 0 20px 0
   text-shadow none
