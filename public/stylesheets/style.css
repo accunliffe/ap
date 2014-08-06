@@ -84,7 +84,7 @@ video#vid {
   display: inline-block;
 }
 #nav {
-  background-color: rgba(201,201,199,0.85);
+  background-color: rgba(255,255,255,0.8);
   border: 1px solid #e67820;
   position: fixed;
   z-index: 1;
@@ -132,7 +132,7 @@ ul li.divider {
   height: 100%;
   width: 80%;
   position: relative;
-  background-color: rgba(201,201,199,0.85);
+  background-color: rgba(255,255,255,0.5);
   margin: 0 auto 0 auto;
   border: 1px solid #e67820;
 }
@@ -184,7 +184,7 @@ img#img-wrapperm {
   max-height: 250px;
 }
 #footer.navbar {
-  background-color: rgba(201,201,199,0.85);
+  background-color: rgba(255,255,255,0.8);
   border: 1px solid #e67820;
   height: 100px;
   margin: 40px auto 0 auto;
