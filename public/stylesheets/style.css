@@ -93,6 +93,8 @@ img.pointer {
   float: right;
   display: inline-block;
   cursor: pointer;
+  padding-top: 14px;
+  padding-right: 20px;
 }
 img.logo3 {
   float: left;
@@ -105,11 +107,11 @@ h1.navtext {
   padding-left: 30px;
   font-family: 'leagueG';
   margin-top: 15px;
-  text-shadow: 0px 0px 1px #f5f36a, 0px 0px 1px #f5f36a;
+  text-shadow: 0px 0px 1px #e67820, 0px 0px 1px #e67820;
   -webkit-font-smoothing: antialiased;
 }
 ul.dropdown-menu {
-  background-color: rgba(201,201,199,0.85);
+  background-color: rgba(255,255,255,0.8);
   margin-right: 20px;
   border: 1px solid #e67820;
 }
@@ -118,7 +120,7 @@ ul li.divider {
 }
 .dropdown-menu li a {
   -webkit-font-smoothing: antialiased;
-  text-shadow: 0px 0px 0.5px #f5f36a, 0px 0px 0.5px #f5f36a;
+  text-shadow: 0px 0px 1px #e67820;
 }
 .container-fluid#wrap {
   height: auto;
@@ -146,7 +148,7 @@ ul li.divider {
   font-family: 'leagueG';
   font-size: 200%;
   -webkit-font-smoothing: antialiased;
-  text-shadow: 0px 0px 0.5px #f5f36a, 0px 0px 0.5px #f5f36a;
+  text-shadow: 0px 0px 1px #e67820, 0px 0px 1px #e67820;
   padding-top: 15px;
 }
 p.content-text {
@@ -174,7 +176,7 @@ p.content-textm {
   text-shadow: none;
 }
 img#img-wrapper {
-  margin: 0 auto 0 auto;
+  margin: 20px auto 20px auto;
   padding: 0 15px 0 15px;
   max-height: 400px;
 }
