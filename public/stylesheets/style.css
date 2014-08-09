@@ -195,7 +195,7 @@ p.content-textm {
 img#img-wrapper {
   margin: 20px auto 20px auto;
   padding: 0 15px 0 15px;
-  max-height: 400px;
+  height: 250px;
 }
 img#img-wrapperm {
   margin: 0 auto 0 auto;
