@@ -53,7 +53,7 @@ block content
             img#img-wrapper.img-responsive.img-rounded.img-scale(src='/images/d3.png' alt= 'dictionary.com')          
         #div3.pbox.contentdiv Built From Mockups
           .container-fluid#video-container
-            video(autoplay='', loop='')
+            video(autoplay='autoplay', loop='loop', preload='auto')
               source(src='/videos/dd.webm', type='video/webm')
               source(src='/videos/dd.mp4', type='video/mp4')
               source(src='/videos/dd.ogg', type='video/ogg')
@@ -67,8 +67,10 @@ block content
         #div5.pbox.contentdiv Responsive
           p.content-text-c video div below
           .container-fluid#video-container
-            video.fillwidth(autoplay='', loop='')
-              source(src='https://www.dropbox.com/s/vd2dy1b1uuh52il/dictionarydesktop.mov')
+            video(autoplay='autoplay', loop='loop')
+              source(src='/videos/dd.webm', type='video/webm')
+              source(src='/videos/dd.mp4', type='video/mp4')
+              source(src='/videos/dd.ogg', type='video/ogg')
         #div6.pbox.contentdiv Reach Out
           p.content-text Want to talk to me about job openings at your company?
           p.content-text Want me to design or build your site?
@@ -119,10 +121,9 @@ block content
           p.content-text-c Head over to the <a href='#div3'>built with mockups</a> section to see the build
         #div3.pbox.contentdiv Built From Mockups
           .container-fluid
-            video(autoplay='', loop='')
-              source(src='/videos/dd.webm', type='video/webm')
-              source(src='/videos/dd.mp4', type='video/mp4')
-              source(src='/videos/dd.ogg', type='video/ogg')
+            video(preload='none', controls='controls')
+              source(src='/videos/ddm.mp4', type='video/mp4')
+                      
         #div4.pbox.contentdiv Logo Design
           p.content-text-m
           .container-fluid
@@ -132,11 +133,7 @@ block content
             img#img-wrapper.img-responsive.img-rounded.img-scale(src='/images/wpd.png' alt= '')      
             img#img-wrapper.img-responsive.img-rounded.img-scale(src='/images/logo.png')
         #div5.pbox.contentdiv Responsive
-          .container-fluid
-            video(autoplay='', loop='')
-              source(src='/videos/dd.webm', type='video/webm')
-              source(src='/videos/dd.mp4', type='video/mp4')
-              source(src='/videos/dd.ogg', type='video/ogg')
+          
         #div6.pbox.contentdiv Reach Out
           p.content-text Want to talk to me about job openings at your company?
           p.content-text Want me to design or build your site?
