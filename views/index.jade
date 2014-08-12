@@ -3,6 +3,7 @@ extends layout
 block content
   .container-fluid.sitewrapper
     .vidcover.visible-desktop#trigger
+      h1#timer Please Click The Logo Below
       img#logo(src='/images/logo2.png')
       h1 Andrew Cunliffe Design Engineer                              
     video#vid.visible-desktop(autoplay='', loop='', poster='/images/jump1.png')
@@ -68,7 +69,7 @@ block content
         #div6.pbox.contentdiv Reach Out
           p.content-text Want to talk to me about job openings at your company?
           p.content-text Want me to design or build your site?
-          p.content-text email me <a href='mailto:cunliffeandrewc@gmail.com?Subject=Reach%20Out', target='_top')>here</a>for my resume
+          p.content-text email me <a href='mailto:cunliffeandrewc@gmail.com?Subject=Reach%20Out', target='_top')>here</a>&#44; for my resume, or just to reach out and talk code.
     nav.navbar#footer.row-fluid
       .iconwrap
         p#float-l Connect With Me on LinkedIn
@@ -137,7 +138,7 @@ block content
         #div6.pbox.contentdiv Reach Out
           p.content-text Want to talk to me about job openings at your company?
           p.content-text Want me to design or build your site?
-          p.content-text email me <a href='mailto:cunliffeandrewc@gmail.com?Subject=Reach%20Out', target='_top')>here</a>
+          p.content-text email me <a href='mailto:cunliffeandrewc@gmail.com?Subject=Reach%20Out', target='_top')>here</a>&#44; for my resume, or just to reach out and talk code.
     nav.navbar#footer.row-fluid
       .iconwrap
         p#float-l Connect With Me on LinkedIn
@@ -181,6 +182,10 @@ block content
     $('#vid').fadeOut(1000, 'swing', function() { $(this).remove(),$('#main').fadeIn(1000, 'swing', function() { $(this).add(); });
      });
     });
-    });  
+    });
+  script.
+    $(document).ready(function () {
+    $('#timer').hide(0).delay(10000).show(0);
+    });
   
   
