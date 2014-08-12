@@ -164,7 +164,7 @@ ul li.divider {
 }
 .main-contentm {
   height: 100%;
-  width: 98%;
+  width: 99%;
   position: relative;
   margin: 0 auto 0 auto;
   border: 1px solid #e67820;
@@ -228,7 +228,7 @@ img#img-wrapper {
 video {
   overflow: none;
   background-size: contain;
-  height: auto;
+  height: 80%;
   width: 100%;
   padding: 5px 5px 5px 5px;
 }
