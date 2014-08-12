@@ -30,8 +30,9 @@ body {
 #div3,
 #div4,
 #div5,
-#div6,
-display none,
+#div6 {
+  display: none;
+}
 .sitewrapper {
   position: relative;
   height: 90%;
