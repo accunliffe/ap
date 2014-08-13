@@ -4,7 +4,8 @@
  */
 
 var express = require('express');
-var stylus = require('stylus')
+var newrelic = require('newrelic');
+var stylus = require('stylus');
 var routes = require('./routes');
 var user = require('./routes/user');
 var http = require('http');
