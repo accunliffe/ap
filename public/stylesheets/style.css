@@ -242,6 +242,7 @@ img#img-wrapperb:hover {
   -moz-transition-duration: 250ms;
   position: relative;
   z-index: 99;
+  padding: 20px 0 20px 0;
 }
 #video-container {
   top: 0%;
