@@ -8,6 +8,9 @@
 @font-face 
   font-family:'MSans'
   src url('/fonts/M-Sans.ttf')
+@media only screen and (max-width: 520px) {
+     #nav { position: absolute; }
+}
 
 body
   overflow none
@@ -24,7 +27,7 @@ body
 #div1
   display block
 
-#div2, #div3, #div4, #div5, #div6, #div7
+#div2, #div3, #div4, #div5, #div6, #div7, #timer
   display none
 
 .sitewrapper
@@ -93,6 +96,7 @@ video#vid
   border 1px solid #e67820
   position fixed
   z-index 1
+  min-width 100%
 
 img.pointer
   float right
@@ -106,6 +110,7 @@ img.logo3
   display inline-block
   padding-top 7px
   padding-left 20px
+  padding-bottom 7px
 
 h1.navtext
   display inline-block
@@ -231,6 +236,7 @@ img#img-wrapperb
   -moz-transform scale(1,1)
   -moz-transition-timing-function ease-out
   -moz-transition-duration 250ms
+  overflow none
   &:hover
     opacity 1
     -webkit-transform scale(2.45,2.57)
@@ -242,6 +248,14 @@ img#img-wrapperb
     position relative
     z-index 99
     padding 20px 0 20px 0
+
+img#img-wrapperbm
+  margin 30px auto 30px auto
+  padding 0 15px 0 15px
+  max-height 250px
+  width auto
+  opacity 1
+  overflow-x hidden
 
 #video-container
   top 0%
