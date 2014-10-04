@@ -9,6 +9,8 @@ block content
     video#vid.visible-desktop(autoplay='', loop='', poster='/images/jump1.png')
       source(src='/videos/jump.webm', type='video/webm')   
   .container-fluid.maindiv#main.hidden-phone.hidden-tablet
+    .parallax
+      img.img-responsive(src="/images/bridgebw.png")    
     nav#nav.navbar.row-fluid(role='navigation')
       .rmenu
         img.logo3(src='/images/logo3.png')
@@ -34,9 +36,10 @@ block content
             a(role='menuitem', tabindex='-1', href='#', data-id='div6') Responsive
           li.divider(role='presentation')
           li(role='presentation')
-            a(role='menuitem', tabindex='-1', href='#', data-id='div7') Reach Out                    
-    .container-fluid#wrap
-      .main-content.container-fluid
+            a(role='menuitem', tabindex='-1', href='#', data-id='div7') Reach Out   
+
+    .container-fluid#wrap                   
+      .main-content.container-fluid        
         #div1.contentdiv.pbox About Me
           p.content-text I grew up in Marin County, CA, and joined the army as soon as I could. I left for basic training a week after turning 18. After basic training and Airborne School, I went to Fort Bragg, NC, where I was an airborne infantryman in the 82nd Airborne Division.
            p.content-text I served two tours in Iraq, one during the invasion, which I left for only 28 days after arriving at Bragg. The second was short notice, the day after Thanksgiving, to spend a consecutive Holiday Season in Baghdad. The mission was to secure the safety of the first Iraqi democratic vote in decades, operating in the most volatile sector of Baghdad, Haifa Street.
