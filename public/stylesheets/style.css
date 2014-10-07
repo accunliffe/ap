@@ -77,6 +77,8 @@ img#logo {
   text-align: center;
   padding-top: 20%;
   cursor: pointer;
+  height: auto;
+  width: 120px;
 }
 video#vid {
   position: relative;
@@ -109,9 +111,10 @@ video#vid {
 img.pointer {
   float: right;
   display: inline-block;
-  cursor: pointer;
-  padding-top: 14px;
-  padding-right: 20px;
+  padding-top: 0.5%;
+  padding-right: 1.25%;
+  height: auto;
+  width: 100px;
 }
 img.logo3 {
   float: left;
@@ -119,23 +122,43 @@ img.logo3 {
   padding-top: 7px;
   padding-left: 20px;
   padding-bottom: 7px;
+  height: 42px;
+  width: auto;
+  cursor: pointer;
 }
 h1.navtext {
   display: inline-block;
-  padding-left: 30px;
   font-family: 'MSans';
   color: #fff;
-  margin-top: 15px;
+  padding-top: 0.5%;
+  padding-bottom: 0.5%;
   letter-spacing: 3px;
 }
 h3.navtext {
   display: inline-block;
-  padding-left: 30px;
+  padding-left: 2%;
   font-family: 'MSans';
   color: #fff;
   margin-top: 15px;
   -webkit-font-smoothing: antialiased;
   letter-spacing: 3px;
+}
+.menubutton {
+  text-align: left;
+  display: inline-block;
+  float: left;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+h3.menutext {
+  text-align: left;
+  display: inline-block;
+  font-family: 'MSans';
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+  letter-spacing: 3px;
+  font-size: 18px;
+  margin-top: 10%;
 }
 ul.dropdown-menu {
   background-color: rgba(105,105,105,0.45);
@@ -193,7 +216,7 @@ ul.dropdown-menu {
   color: #fff;
   font-size: 200%;
   -webkit-font-smoothing: antialiased;
-  padding-top: 15px;
+  padding-top: 3%;
   height: auto;
 }
 p.content-text {
@@ -228,8 +251,8 @@ p.content-textm {
 img#img-wrapper {
   margin: 30px auto 30px auto;
   padding: 0 15px 0 15px;
-  max-height: auto;
-  width: 30%;
+  max-height: 300px;
+  width: auto;
   display: inline-block;
 }
 img#img-wrapperb {

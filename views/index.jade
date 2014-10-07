@@ -4,7 +4,7 @@ block content
   .container-fluid.sitewrapper
     .vidcover.visible-desktop#trigger
       h1#timer Please Click The Logo Below
-      img#logo(src='/images/logo2.png')
+      img#logo(src='/images/logo1.png')
       h1 Andrew Cunliffe Design                             
     video#vid.visible-desktop(autoplay='', loop='', poster='/images/jump1.png')
       source(src='/videos/jump.webm', type='video/webm')   
@@ -13,10 +13,12 @@ block content
       img.img-responsive(src="/images/bridgebw.png")
     nav#nav.navbar.row-fluid(role='navigation')
       .rmenu
-        img.logo3(src='/images/logo3.png')
-        h1.navtext.hidden-phone Andrew Cunliffe Design 
-        img.pointer(type='button', data-toggle='dropdown', src='/images/navigate.png')
-        ul#menu.dropdown-menu.dropdown-menu-right(role='menu', aria-labelledby='dropdownMenu1')
+        .menubutton(type='button', data-toggle='dropdown')
+          img.logo3(src='/images/3lines.png')
+          h3.menutext Menu
+        h1.navtext.hidden-phone Andrew Cunliffe Design (Under Construction)
+        img.pointer(src='/images/logo1.png')
+        ul#menu.dropdown-menu.dropdown-menu-left(role='menu', aria-labelledby='dropdownMenu1')
           li(role='presentation')
             a(role='menuitem', tabindex='-1', href='#', data-id='div1') About Me
           li.divider(role='presentation')
