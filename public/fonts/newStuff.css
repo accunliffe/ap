@@ -28,6 +28,18 @@ body {
 .pbox {
   display: none;
 }
+#div1 {
+  display: block;
+}
+#div2,
+#div3,
+#div4,
+#div5,
+#div6,
+#div7,
+#timer {
+  display: none;
+}
 .sitewrapper {
   position: relative;
   height: 90%;
@@ -79,7 +91,10 @@ video#vid {
 }
 .maindiv {
   position: relative;
-  height: 100%;
+  background-color: #212121;
+  background-size: cover;
+  background-position: left top;
+  height: 120%;
   width: 100%;
   margin: 0;
   overflow: none;
@@ -90,9 +105,8 @@ video#vid {
 #nav {
   background-color: rgba(110,110,110,0.75);
   position: fixed;
-  z-index: 2;
+  z-index: 1;
   min-width: 100%;
-  text-align: center;
 }
 img.logo2 {
   float: right;
@@ -158,51 +172,144 @@ ul.dropdown-menu {
   color: #fff;
   font-size: 120%;
 }
-section.module:last-child {
-  margin-bottom: 0;
+.container-fluid#wrap {
+  height: auto;
+  margin: 100px 0 0 0;
 }
-section.module h2 {
-  margin-bottom: 40px;
-  font-family: "Roboto Slab", serif;
-  font-size: 30px;
+.container-fluid#wrapm {
+  height: auto;
+  margin: 100px 0 0 0;
+  width: 100%;
+  overflow: none;
 }
-section.module p {
-  margin-bottom: 40px;
-  font-size: 16px;
-  font-weight: 300;
-  font-size: 20px;
+.parallax {
+  width: 100%;
+  height: 300px;
+  z-index: 0;
+  position: fixed;
 }
-section.module p:last-child {
-  margin-bottom: 0;
-}
-section.module.content {
-  padding: 40px 0;
-}
-section.module.parallax {
-  height: 600px;
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-}
-section.module.parallax h1 {
-  color: rgba(255,255,255,0.8);
-  font-size: 48px;
-  line-height: 600px;
-  font-weight: 700;
+.triplet {
+  height: 40%;
+  display: inline-block;
+  width: 100%;
+  padding: 1% 0 1% 0;
+  position: relative;
   text-align: center;
-  text-transform: uppercase;
-  text-shadow: 0 0 10px rgba(0,0,0,0.2);
-  font-size: 96px;
 }
-section.module.parallax-1 {
-  background-image: url("/images/bridgebw.png");
+.circleBase {
+  border-radius: 20%;
+  width: auto;
+  height: auto;
 }
-section.module.parallax-2 {
-  background-image: url("/images/lakeBW.png");
+.main-content {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  margin: 31.5% auto 0 auto;
 }
-section.module.parallax-3 {
-  background-image: url("/images/citybw.png");
+.main-contentm {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  margin: 20% auto 0 auto;
+}
+.contentdiv {
+  background-color: #212121;
+  position: relative;
+  text-align: center;
+  vertical-align: middle;
+  margin: 0 auto 0 auto;
+  font-family: 'MSans';
+  color: #fff;
+  font-size: 200%;
+  -webkit-font-smoothing: antialiased;
+  padding-top: 5%;
+  height: auto;
+}
+p.content-text {
+  font-family: 'leagueG';
+  color: #fff;
+  margin: 0 3.5% 0 3.5%;
+  text-align: justify;
+  font-size: 80%;
+  padding: 15px 0 20px 0;
+  text-shadow: none;
+  display: inline-block;
+  width: 25%;
+}
+p.content-text-c {
+  font-family: 'leagueG';
+  color: #fff;
+  margin: 0 30px 0 30px;
+  text-align: center;
+  font-size: 80%;
+  padding: 15px 0 20px 0;
+  text-shadow: none;
+}
+p.content-textm {
+  font-family: 'leagueG';
+  color: #fff;
+  margin: 0 30px 0 30px;
+  text-align: left;
+  font-size: 80%;
+  padding: 20px 0 20px 0;
+  text-shadow: none;
+}
+img#img-wrapper {
+  margin: 55px auto 55px auto;
+  max-height: 300px;
+  width: auto;
+  display: inline-block;
+}
+img#img-wrapperb {
+  margin: 30px 10px 30px 10px;
+  padding: 0 15px 0 15px;
+  max-height: 250px;
+  display: inline-block;
+  width: auto;
+  opacity: 1;
+  -webkit-transform: scale(1, 1);
+  -webkit-transition-timing-function: ease-out;
+  -webkit-transition-duration: 100ms;
+  -moz-transform: scale(1, 1);
+  -moz-transition-timing-function: ease-out;
+  -moz-transition-duration: 100ms;
+  overflow: none;
+  position: relative;
+  z-index: 0;
+}
+img#img-wrapperb:hover {
+  opacity: 1;
+  -webkit-transform: scale(1.15, 1.15);
+  -webkit-transition-timing-function: ease-out;
+  -webkit-transition-duration: 100ms;
+  -moz-transform: scale(1.15, 1.15);
+  -moz-transition-timing-function: ease-out;
+  -moz-transition-duration: 100ms;
+  position: relative;
+}
+img#img-wrapperbm {
+  margin: 30px auto 30px auto;
+  padding: 0 15px 0 15px;
+  max-height: 250px;
+  width: auto;
+  opacity: 1;
+  overflow-x: hidden;
+}
+#video-container {
+  top: 0%;
+  left: 0%;
+  overflow: hidden;
+  background-size: contain;
+  width: 100%;
+  height: 100%;
+}
+video {
+  overflow: none;
+  background-size: contain;
+  height: 80%;
+  width: 100%;
+  padding: 5px 5px 5px 5px;
 }
 nav.navbar#footer {
   background-color: rgba(110,110,110,0.75);
@@ -230,6 +337,10 @@ nav.navbar#footer {
   color: #fff;
   width: auto;
   height: auto;
+}
+p#float-l {
+  float: left;
+  padding: 17% 0 0 0;
 }
 .linkedin-icon {
   display: inline-block;

@@ -8,12 +8,8 @@ block content
       h1 Andrew Cunliffe Design                             
     video#vid.visible-desktop(autoplay='', loop='', poster='/images/jump1.png')
       source(src='/videos/jump.webm', type='video/webm')   
-  .container-fluid.maindiv#main.hidden-phone.hidden-tablet
-    .parallax
-      img.img-responsive(src="/images/bridgebw.png")
-      img.img-responsive(src="/images/lakeBW.png")
-    nav#nav.navbar.row-fluid(role='navigation')
-      .rmenu
+   nav#nav.navbar.row-fluid(role='navigation')
+      .rmenu#main
         .menubutton(type='button', data-toggle='dropdown')
           img.logo3(src='/images/3lines.png')
           h3.menutext Menu
@@ -33,72 +29,42 @@ block content
             a(role='menuitem', tabindex='-1', href='#', data-id='div5') Logo Design                 
           li.divider(role='presentation')
           li(role='presentation')
-            a(role='menuitem', tabindex='-1', href='#', data-id='div7') Reach Out   
-
-    .container-fluid#wrap                   
-      .main-content.container-fluid        
-        #div1.contentdiv.pbox About Me
-          .triplet
-            p.content-text I grew up in Marin County, CA, and joined the army as soon as I could. After basic training and Airborne School, I went to Fort Bragg, NC, where I was an airborne infantryman in the 82nd Airborne Division.            
-            p.content-text I served two tours in Iraq, one during the invasion, which I left for only 28 days after arriving at Bragg. The second was short notice, the day after Thanksgiving, to spend a consecutive Holiday Season in Baghdad.
-            p.content-text My degree is in Finance, but I quickly realized, I wanted to design and build amazing technology. My future dream is to advise, mentor, and fund, veteran spawned tech companies.                       
-            img#img-wrapper.img-responsive.img-scale.circleBase(src='/images/cemetary.jpg' alt= 'army')
-        #div2.pbox.contentdiv stockickr
-          p.content-text-c My idea - My design
-          img#img-wrapperb.img-responsive.img-rounded.img-scale(src='/images/s1.png' alt= 'sk')      
-          img#img-wrapperb.img-responsive.img-rounded.img-scale(src='/images/s2.png' alt= 'sk')      
-          img#img-wrapperb.img-responsive.img-rounded.img-scale(src='/images/s3.png' alt= 'sk')      
-          img#img-wrapperb.img-responsive.img-rounded.img-scale(src='/images/s4.png' alt= 'sk')      
-          img#img-wrapperb.img-responsive.img-rounded.img-scale(src='/images/s5.png' alt= 'sk')      
-          img#img-wrapperb.img-responsive.img-rounded.img-scale(src='/images/s6.png' alt= 'sk')      
-          img#img-wrapperb.img-responsive.img-rounded.img-scale(src='/images/s7.png' alt= 'sk')      
-          img#img-wrapperb.img-responsive.img-rounded.img-scale(src='/images/s8.png' alt= 'sk')      
-          img#img-wrapperb.img-responsive.img-rounded.img-scale(src='/images/s9.png' alt= 'sk')      
-          img#img-wrapperb.img-responsive.img-rounded.img-scale(src='/images/s10.png' alt= 'sk')    
-          img#img-wrapperb.img-responsive.img-rounded.img-scale(src='/images/s11.png' alt= 'sk')     
-          img#img-wrapperb.img-responsive.img-rounded.img-scale(src='/images/sk1.png' alt= 'sk')    
-          img#img-wrapperb.img-responsive.img-rounded.img-scale(src='/images/sk2.png' alt= 'sk')    
-          img#img-wrapperb.img-responsive.img-rounded.img-scale(src='/images/sk3.png' alt= 'sk')    
-          img#img-wrapperb.img-responsive.img-rounded.img-scale(src='/images/sk4.png' alt= 'sk')     
-          img#img-wrapperb.img-responsive.img-rounded.img-scale(src='/images/sk5.png' alt= 'sk')     
-          img#img-wrapperb.img-responsive.img-rounded.img-scale(src='/images/sk6.png' alt= 'sk')     
-        #div3.pbox.contentdiv Web and Mobile Design
-          p.content-text-c I recently redesigned Dicitonary.com to test my skills, and later did a build based on my mockups.
-          p.content-text-c Screenshots of my OmniGraffle mockups:
-            img#img-wrapperb.img-responsive.img-rounded.img-scale(src='/images/d1.png' alt= 'dictionary.com')          
-            img#img-wrapperb.img-responsive.img-rounded.img-scale(src='/images/d2.png' alt= 'dictionary.com')          
-            img#img-wrapperb.img-responsive.img-rounded.img-scale(src='/images/d3.png' alt= 'dictionary.com')          
-            img#img-wrapperb.img-responsive.img-rounded.img-scale(src='/images/d4.png' alt= 'dictionary.com')
-        #div5.pbox.contentdiv Logo Design
-          p.content-text-c Created with OmniGraffle, Photoshop, and Illustrator
-          .container-fluid
-            img#img-wrapper.img-responsive.img-rounded.img-scale(src='/images/sk.png' alt= '')       
-            img#img-wrapper.img-responsive.img-rounded.img-scale(src='/images/rbtrn.png' alt= '')    
-            img#img-wrapper.img-responsive.img-rounded.img-scale(src='/images/d.png' alt= '')       
-            img#img-wrapper.img-responsive.img-rounded.img-scale(src='/images/wpd.png' alt= '')      
-            img#img-wrapper.img-responsive.img-rounded.img-scale(src='/images/logo.png')       
-        #div7.pbox.contentdiv Reach Out
-          .triplet
-            p.content-text Want to talk to me about job openings at your company?
-            p.content-text Want me to design or build your website, mobile app, or eventsite?
-            p.content-text email me <a href='mailto:cunliffeandrewc@gmail.com?Subject=Reach%20Out', target='_top')>here</a>&#44; for my resume, or just to reach out and talk code, or design.    
-    nav.navbar#footer.row-fluid
+            a(role='menuitem', tabindex='-1', href='#', data-id='div7') Reach Out
+  .container-fluid.maindiv.hidden-phone.hidden-tablet.pbox      
+    section.module.parallax.parallax-1
+      .container
+        h1 Title
+    section.module.content
+      .container
+        h2 Content
+        p Content
+    section.module.parallax.parallax-2
+      .container
+        h1 Title
+    section.module.content
+      .container
+        h2 Content
+        p Content
+    section.module.parallax.parallax-3
+      .container
+        h1 Title
+    section.module.content
+      .container
+        h2 Content
+        p Content
+     nav.navbar#footer.row-fluid
       .iconwrap
         p#float-l Connect With Me on LinkedIn
         a.linkedin-icon(href='https://www.linkedin.com/in/cunliffeandrew', target='_blank')
-  .parallax
-    img.img-responsive(src="/images/bridgebw.png")  
-  .container-fluid.maindiv.show-phone.show-tablet.hidden-desktop
-    .parallax
-      img.img-responsive(src="/images/bridgebw.png")
-    nav#nav.navbar.navbar-default.row-fluid(role='navigation')
-      .rmenu
+
+  nav#nav.navbar.row-fluid.show-phone.show-tablet.hidden-desktop(role='navigation')
+      .rmenu#main
         .menubutton(type='button', data-toggle='dropdown')
           img.logo3(src='/images/3lines.png')
           h3.menutext Menu
-        h3.navtext.hidden-phone Andrew Cunliffe Design 
+        h3.navtext1.hidden-phone Andrew Cunliffe Design (Under Construction)
         img.logo2(src='/images/logo1.png')
-        ul#menu1.dropdown-menu.dropdown-menu-left(role='menu', aria-labelledby='dropdownMenu1')
+        ul#menu.dropdown-menu.dropdown-menu-left(role='menu', aria-labelledby='dropdownMenu1')
           li(role='presentation')
             a(role='menuitem', tabindex='-1', href='#', data-id='div1') About Me
           li.divider(role='presentation')
@@ -107,108 +73,42 @@ block content
           li.divider(role='presentation')
           li(role='presentation')
             a(role='menuitem', tabindex='-1', href='#', data-id='div3') Web and Mobile Design  
-          li.divider(role='presentation')         
+          li.divider(role='presentation')
           li(role='presentation')
-            a(role='menuitem', tabindex='-1', href='#', data-id='div5') Logo Design
-          li.divider(role='presentation')         
+            a(role='menuitem', tabindex='-1', href='#', data-id='div5') Logo Design                 
+          li.divider(role='presentation')
           li(role='presentation')
             a(role='menuitem', tabindex='-1', href='#', data-id='div7') Reach Out
-    .container-fluid#wrapm
-      .main-contentm.container-fluid
-        #div1.contentdiv.pbox About Me
-          p.content-textm I grew up in Marin County, CA, and joined the army as soon as I could. I left for basic training a week after turning 18. After basic training and Airborne School, I went to Fort Bragg, NC, where I was an airborne infantryman in the 82nd Airborne Division.
-           p.content-textm I served two tours in Iraq, one during the invasion, which I left for only 28 days after arriving at Bragg. The second was short notice, the day after Thanksgiving, to spend a consecutive Holiday Season in Baghdad. The mission was to secure the safety of the first Iraqi democratic vote in decades, operating in the most volatile sector of Baghdad, Haifa Street.
-          .container-fluid
-            img#img-wrapper.img-responsive.img-rounded.img-scale(src='/images/cemetary.jpg' alt= 'army')
-          p.content-textm My degree is in Finance, and I thought I wanted to be a financial analyst, trader, what have you, but that’s not what I want to do. I want to build amazing, and beautiful, technology. My future dream, beyond establishing a career in technology, is to advise, mentor, and fund, veteran spawned tech companies.
-          .container-fluid
-            img#img-wrapper.img-responsive.img-rounded.img-scale(src='/images/me.png' alt= 'me')
-        #div2.pbox.contentdiv stockickr
-          p.content-text-c My idea - My design
-            img#img-wrapperbm.img-responsive.img-rounded(src='/images/s1.png' alt= 'sk')
-          .row-fluid
-          .container-fluid
-            img#img-wrapperbm.img-responsive.img-rounded(src='/images/s2.png' alt= 'sk')
-          .row-fluid
-          .container-fluid
-            img#img-wrapperbm.img-responsive.img-rounded(src='/images/s3.png' alt= 'sk')
-          .row-fluid
-          .container-fluid
-            img#img-wrapperbm.img-responsive.img-rounded(src='/images/s4.png' alt= 'sk')
-          .row-fluid
-          .container-fluid
-            img#img-wrapperbm.img-responsive.img-rounded(src='/images/s5.png' alt= 'sk')
-          .row-fluid
-          .container-fluid
-            img#img-wrapperbm.img-responsive.img-rounded(src='/images/s6.png' alt= 'sk')
-          .row-fluid
-          .container-fluid
-            img#img-wrapperbm.img-responsive.img-rounded(src='/images/s7.png' alt= 'sk')
-          .row-fluid
-          .container-fluid
-            img#img-wrapperbm.img-responsive.img-rounded(src='/images/s8.png' alt= 'sk')
-          .row-fluid
-          .container-fluid
-            img#img-wrapperbm.img-responsive.img-rounded(src='/images/s9.png' alt= 'sk')
-          .row-fluid
-          .container-fluid
-            img#img-wrapperbm.img-responsive.img-rounded(src='/images/s10.png' alt= 'sk')
-          .row-fluid
-          .container-fluid
-            img#img-wrapperbm.img-responsive.img-rounded(src='/images/s11.png' alt= 'sk')
-          .row-fluid
-          .container-fluid
-            img#img-wrapperbm.img-responsive.img-rounded(src='/images/sk1.png' alt= 'sk')
-          .row-fluid
-          .container-fluid
-            img#img-wrapperbm.img-responsive.img-rounded(src='/images/sk2.png' alt= 'sk')
-          .row-fluid
-          .container-fluid
-            img#img-wrapperbm.img-responsive.img-rounded(src='/images/sk3.png' alt= 'sk')
-          .row-fluid
-          .container-fluid
-            img#img-wrapperbm.img-responsive.img-rounded(src='/images/sk4.png' alt= 'sk')
-          .row-fluid
-          .container-fluid
-            img#img-wrapperbm.img-responsive.img-rounded(src='/images/sk5.png' alt= 'sk')
-          .row-fluid
-          .container-fluid
-            img#img-wrapperbm.img-responsive.img-rounded(src='/images/sk6.png' alt= 'sk')  
-        #div3.pbox.contentdiv Web and Mobile Design
-          p.content-text-c I recently redesigned Dicitonary.com to test my skills, and later did a build based on my mockups.
-          p.content-text-c Screenshots of my OmniGraffle mockups:
-          .container-fluid
-            img#img-wrapperbm.img-responsive.img-rounded(src='/images/d1.png' alt= 'dictionary.com')
-          .row-fluid
-          .container-fluid
-            img#img-wrapperbm.img-responsive.img-rounded(src='/images/d2.png' alt= 'dictionary.com')
-          .row-fluid
-          .container-fluid
-            img#img-wrapperbm.img-responsive.img-rounded(src='/images/d3.png' alt= 'dictionary.com')
-          .row-fluid
-          .container-fluid
-            img#img-wrapperbm.img-responsive.img-rounded(src='/images/d4.png' alt= 'dictionary.com') 
-        #div5.pbox.contentdiv Logo Design
-          p.content-text-c Created with Omnigraffle, Photoshop, and Illustrator
-          .container-fluid
-            img#img-wrapperbm.img-responsive.img-rounded(src='/images/sk.png' alt= '')     
-            img#img-wrapperbm.img-responsive.img-rounded(src='/images/rbtrn.png' alt= '')  
-            img#img-wrapperbm.img-responsive.img-rounded(src='/images/d.png' alt= '')     
-            img#img-wrapperbm.img-responsive.img-rounded(src='/images/wpd.png' alt= '')    
-            img#img-wrapperbm.img-responsive.img-rounded(src='/images/logo.png')
-        #div7.pbox.contentdiv Reach Out
-          p.content-text Want to talk to me about job openings at your company?
-          p.content-text Want me to design or build your site?
-          p.content-text email me <a href='mailto:cunliffeandrewc@gmail.com?Subject=Reach%20Out', target='_top')>here</a>&#44; for my resume, or just to reach out and talk code, or design.
-    nav.navbar#footer.row-fluid
+  .container-fluid.maindiv.show-phone.show-tablet.hidden-desktop.pbox
+    section.module.parallax.parallax-1
+      .container
+        h1 Title
+    section.module.content
+      .container
+        h2 Content
+        p Content
+    section.module.parallax.parallax-2
+      .container
+        h1 Title
+    section.module.content
+      .container
+        h2 Content
+        p Content
+    section.module.parallax.parallax-3
+      .container
+        h1 Title
+    section.module.content
+      .container
+        h2 Content
+        p Content
+     nav.navbar#footer.row-fluid
       .iconwrap
         p#float-l Connect With Me on LinkedIn
         a.linkedin-icon(href='https://www.linkedin.com/in/cunliffeandrew', target='_blank')
+    
       
   script(src='/javascripts/jquery/jquery-2.0.3.min.js')
   script(src="/javascripts/bootstrap.min.js")
-  script(src="/ap/newrelic.js")
-
 
   script.
     $(document).ready(function () {
@@ -230,6 +130,8 @@ block content
         $('.pbox[id=' + $(this).attr('data-id') + ']').show(800);
     });
     });
+
+  
   script.
     $(document).ready(function () {
     $('#logo').click(function() {
