@@ -1,15 +1,9 @@
 extends layout
 
 block content
-  .container-fluid.sitewrapper
-    .vidcover.visible-desktop#trigger
-      h1#timer Please Click The Logo Below
-      img#logo(src='/images/logo1.png')
-      h1 Andrew Cunliffe Design                             
-    video#vid.visible-desktop(autoplay='', loop='', poster='/images/jump1.png')
-      source(src='/videos/jump.webm', type='video/webm')   
-   nav#nav.navbar.row-fluid(role='navigation')
-      .rmenu#main
+  .container-fluid.hidden-phone.hidden-tablet
+    nav#nav.navbar.row-fluid(role='navigation')
+      .rmenu
         .menubutton(type='button', data-toggle='dropdown')
           img.logo3(src='/images/3lines.png')
           h3.menutext Menu
@@ -29,8 +23,7 @@ block content
             a(role='menuitem', tabindex='-1', href='#', data-id='div5') Logo Design                 
           li.divider(role='presentation')
           li(role='presentation')
-            a(role='menuitem', tabindex='-1', href='#', data-id='div7') Reach Out
-  .container-fluid.maindiv.hidden-phone.hidden-tablet.pbox      
+            a(role='menuitem', tabindex='-1', href='#', data-id='div7') Reach Out      
     section.module.parallax.parallax-1
       .container
         h1 Title
@@ -58,7 +51,7 @@ block content
         a.linkedin-icon(href='https://www.linkedin.com/in/cunliffeandrew', target='_blank')
 
   nav#nav.navbar.row-fluid.show-phone.show-tablet.hidden-desktop(role='navigation')
-      .rmenu#main
+      .rmenu
         .menubutton(type='button', data-toggle='dropdown')
           img.logo3(src='/images/3lines.png')
           h3.menutext Menu
@@ -79,7 +72,7 @@ block content
           li.divider(role='presentation')
           li(role='presentation')
             a(role='menuitem', tabindex='-1', href='#', data-id='div7') Reach Out
-  .container-fluid.maindiv.show-phone.show-tablet.hidden-desktop.pbox
+  .container-fluid.maindiv.show-phone.show-tablet.hidden-desktop#pbox
     section.module.parallax.parallax-1
       .container
         h1 Title
