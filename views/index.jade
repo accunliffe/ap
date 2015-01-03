@@ -7,44 +7,55 @@ block content
         .menubutton(type='button', data-toggle='dropdown')
           img.logo3(src='/images/3lines.png')
           h3.menutext Menu
-        h3.navtext1.hidden-phone Andrew Cunliffe Design (Under Construction)
+        h3.navtext1.hidden-phone Andrew Cunliffe Design
         img.logo2(src='/images/logo1.png')
         ul#menu.dropdown-menu.dropdown-menu-left(role='menu', aria-labelledby='dropdownMenu1')
           li(role='presentation')
-            a(role='menuitem', tabindex='-1', href='#', data-id='div1') About Me
+            a(role='menuitem', tabindex='-1', href='#aboutMe', data-id='div1') About Me
           li.divider(role='presentation')
           li(role='presentation')
-            a(role='menuitem', tabindex='-1', href='#', data-id='div2') stockickr  
+            a(role='menuitem', tabindex='-1', href='#stockickr', data-id='div2') stockickr  
           li.divider(role='presentation')
           li(role='presentation')
-            a(role='menuitem', tabindex='-1', href='#', data-id='div3') Web and Mobile Design  
+            a(role='menuitem', tabindex='-1', href='#project1', data-id='div3') Project One  
           li.divider(role='presentation')
           li(role='presentation')
-            a(role='menuitem', tabindex='-1', href='#', data-id='div5') Logo Design                 
+            a(role='menuitem', tabindex='-1', href='#project2', data-id='div5') Project Two          
           li.divider(role='presentation')
           li(role='presentation')
-            a(role='menuitem', tabindex='-1', href='#', data-id='div7') Reach Out      
-    section.module.parallax.parallax-1
+            a(role='menuitem', tabindex='-1', href='#project3', data-id='div7') Project Three      
+    section#aboutMe.module.parallax.parallax-1.top
       .container
-        h1 Title
+        h1 Andrew Cunliffe Design
     section.module.content
+      h2 About Me
+      p.left A;OIJF;OIASJDFIO;JZDS;ILFJIO;ZDSJF;OIJADI;OFJA;OIDFJIOd
+      p.verticalLine
+      p.right wepoj'jfdj;sdjfkaj;dj;sdj;JASDJFH;OASHD;FHZS;DOHFOZDSJ
+    section#stockickr.module.parallax.parallax-2
       .container
-        h2 Content
-        p Content
-    section.module.parallax.parallax-2
-      .container
-        h1 Title
+        h1 stockickr
     section.module.content
+      h2 My Idea
+      p.left A;OIJF;OIASJDFIO;JZDS;ILFJIO;ZDSJF;OIJADI;OFJA;OIDFJIOd
+      p.verticalLine
+      p.right wepoj'jfdj;sdjfkaj;dj;sdj;JASDJFH;OASHD;FHZS;DOHFOZDSJ
+    section#project1.module.parallax.parallax-3
       .container
-        h2 Content
-        p Content
-    section.module.parallax.parallax-3
-      .container
-        h1 Title
+        h1 Project One
     section.module.content
+      h2 Pool Shrk
+      p.left A;OIJF;OIASJDFIO;JZDS;ILFJIO;ZDSJF;OIJADI;OFJA;OIDFJIOd
+      p.verticalLine
+      p.right wepoj'jfdj;sdjfkaj;dj;sdj;JASDJFH;OASHD;FHZS;DOHFOZDSJ
+    section#project2.module.parallax.parallax-4
       .container
-        h2 Content
-        p Content
+        h1 Project Two
+    section.module.content
+      h2 True Spirit
+      p.left A;OIJF;OIASJDFIO;JZDS;ILFJIO;ZDSJF;OIJADI;OFJA;OIDFJIOd
+      p.verticalLine
+      p.right wepoj'jfdj;sdjfkaj;dj;sdj;JASDJFH;OASHD;FHZS;DOHFOZDSJ
      nav.navbar#footer.row-fluid
       .iconwrap
         p#float-l Connect With Me on LinkedIn
@@ -73,7 +84,7 @@ block content
           li(role='presentation')
             a(role='menuitem', tabindex='-1', href='#', data-id='div7') Reach Out
   .container-fluid.maindiv.show-phone.show-tablet.hidden-desktop#pbox
-    section.module.parallax.parallax-1
+    section.module.parallax.parallax-1.img-responsive
       .container
         h1 Title
     section.module.content
@@ -94,6 +105,13 @@ block content
       .container
         h2 Content
         p Content
+    section.module.parallax.parallax-4
+      .container
+        h1 Title
+    section.module.content
+      .container
+        h2 Content
+        p Content
      nav.navbar#footer.row-fluid
       .iconwrap
         p#float-l Connect With Me on LinkedIn
@@ -102,45 +120,16 @@ block content
       
   script(src='/javascripts/jquery/jquery-2.0.3.min.js')
   script(src="/javascripts/bootstrap.min.js")
-
-  script.
-    $(document).ready(function () {
-    $('#menu').on('click', 'a', function () {
-        $('.current').not($(this).closest('li').addClass('current')).removeClass('current');
-        // fade out all open subcontents
-        $('.pbox:visible').hide(800);
-        // fade in new selected subcontent
-        $('.pbox[id=' + $(this).attr('data-id') + ']').show(800);
-    });
-    });
-  script.
-    $(document).ready(function () {
-    $('#menu1').on('click', 'a', function () {
-        $('.current').not($(this).closest('li').addClass('current')).removeClass('current');
-        // fade out all open subcontents
-        $('.pbox:visible').hide(800);
-        // fade in new selected subcontent
-        $('.pbox[id=' + $(this).attr('data-id') + ']').show(800);
-    });
-    });
+  script(src='javascripts/lib/angular/angular.js')
+  script(src='javascripts/lib/angular/angular-route.js')
+  script(src='javascripts/app.js')
+  script(src='javascripts/services.js')
+  script(src='javascripts/controllers.js')
+  script(src='javascripts/filters.js')
+  script(src='javascripts/directives.js')  
+  script(src='javascripts/ui-bootstrap-tpls.min.js')
+  
 
   
-  script.
-    $(document).ready(function () {
-    $('#logo').click(function() {
-    $('#trigger').fadeOut(1000, 'swing', function() { $(this).remove(); });
-    });
-    });
-  script.
-    $(document).ready(function () {
-    $('#logo').click(function() {
-    $('#vid').fadeOut(1000, 'swing', function() { $(this).remove(),$('#main').fadeIn(1000, 'swing', function() { $(this).add(); });
-     });
-    });
-    });
-  script.
-    $(document).ready(function () {
-    $('#timer').hide(0).delay(10000).show(0);
-    });
   
   
