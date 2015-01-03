@@ -2,25 +2,28 @@ extends layout
 
 block content
   .container-fluid.hidden-phone.hidden-tablet
-    nav#nav.navbar.row-fluid(ng-controller='floatCtrl')
+    nav#nav.navbar.row-fluid(role='navigation')
       .rmenu
         .menubutton(type='button', data-toggle='dropdown')
           img.logo3(src='/images/3lines.png')
           h3.menutext Menu
-        h3.navtext1.hidden-phone AC Design
+        h3.navtext1.hidden-phone Andrew Cunliffe Design
         img.logo2(src='/images/logo1.png')
         ul#menu.dropdown-menu.dropdown-menu-left(role='menu', aria-labelledby='dropdownMenu1')
           li(role='presentation')
-            a(href='#main', du-smooth-scroll duration='1500', du-scrollspy='', offset='', ng-click=' dude()') About Me
+            a(role='menuitem', tabindex='-1', href='#aboutMe', data-id='div1') About Me
           li.divider(role='presentation')
           li(role='presentation')
             a(role='menuitem', tabindex='-1', href='#stockickr', data-id='div2') stockickr  
           li.divider(role='presentation')
           li(role='presentation')
-            a(role='menuitem', tabindex='-1', href='#project1', data-id='div3') PoolShrk  
+            a(role='menuitem', tabindex='-1', href='#project1', data-id='div3') Project One  
           li.divider(role='presentation')
           li(role='presentation')
-            a(role='menuitem', tabindex='-1', href='#project2', data-id='div5') True Spirit          
+            a(role='menuitem', tabindex='-1', href='#project2', data-id='div5') Project Two          
+          li.divider(role='presentation')
+          li(role='presentation')
+            a(role='menuitem', tabindex='-1', href='#project3', data-id='div7') Project Three      
     section#aboutMe.module.parallax.parallax-1.top
       .container
         h1 Andrew Cunliffe Design
@@ -37,19 +40,19 @@ block content
       p.left A;OIJF;OIASJDFIO;JZDS;ILFJIO;ZDSJF;OIJADI;OFJA;OIDFJIOd
       p.verticalLine
       p.right wepoj'jfdj;sdjfkaj;dj;sdj;JASDJFH;OASHD;FHZS;DOHFOZDSJ
-    section#main.module.parallax.parallax-3
+    section#project1.module.parallax.parallax-3
       .container
-        h1 PoolShrk
+        h1 Project One
     section.module.content
-      h2 Project One
+      h2 Pool Shrk
       p.left A;OIJF;OIASJDFIO;JZDS;ILFJIO;ZDSJF;OIJADI;OFJA;OIDFJIOd
       p.verticalLine
       p.right wepoj'jfdj;sdjfkaj;dj;sdj;JASDJFH;OASHD;FHZS;DOHFOZDSJ
     section#project2.module.parallax.parallax-4
       .container
-        h1 True Spirit
+        h1 Project Two
     section.module.content
-      h2 Project Two
+      h2 True Spirit
       p.left A;OIJF;OIASJDFIO;JZDS;ILFJIO;ZDSJF;OIJADI;OFJA;OIDFJIOd
       p.verticalLine
       p.right wepoj'jfdj;sdjfkaj;dj;sdj;JASDJFH;OASHD;FHZS;DOHFOZDSJ
