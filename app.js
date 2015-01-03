@@ -4,7 +4,6 @@
  */
 
 var express = require('express');
-var newrelic = require('newrelic');
 var stylus = require('stylus');
 var routes = require('./routes');
 var user = require('./routes/user');
@@ -31,9 +30,21 @@ if ('development' == app.get('env')) {
   app.use(express.errorHandler());
 }
 
+// Routes
 app.get('/', routes.index);
-app.get('/users', user.list);
+app.get('/partial/:name', routes.partial);
 
-http.createServer(app).listen(app.get('port'), function(){
+// JSON API
+app.get('/partials/:name',function(req,res){
+  res.render('partials/'+req.params.name);
+})
+// redirect all others to the index (HTML5 history)
+app.get('*', routes.index);
+
+/**
+* Start Server
+*/
+
+http.createServer(app).listen(app.get('port'), function () {
   console.log('Express server listening on port ' + app.get('port'));
 });
