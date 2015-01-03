@@ -35,6 +35,7 @@ body {
   z-index: 2;
   min-width: 100%;
   text-align: center;
+  border-bottom: 1px solid #fff;
 }
 img.logo2 {
   float: right;
@@ -58,11 +59,13 @@ img.logo3 {
 }
 h3.navtext1 {
   display: inline-block;
-  font-family: 'MSans';
   color: #fff;
   padding-top: 0.5%;
   padding-bottom: 0.5%;
+  padding-right: 5%;
   letter-spacing: 3px;
+  text-align: center;
+  text-transform: uppercase;
 }
 h3.navtext {
   display: inline-block;
