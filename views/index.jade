@@ -10,48 +10,51 @@ block content
         h3.navtext1.hidden-phone Andrew Cunliffe Design
         img.logo2(src='/images/logo1.png')
         ul#menu.dropdown-menu.dropdown-menu-left(role='menu', aria-labelledby='dropdownMenu1')
-          li(role='presentation')
+          li#div1(role='presentation')
             a(role='menuitem', tabindex='-1', href='#aboutMe', data-id='div1') About Me
           li.divider(role='presentation')
-          li(role='presentation')
+          li#div2(role='presentation')
             a(role='menuitem', tabindex='-1', href='#stockickr', data-id='div2') stockickr  
           li.divider(role='presentation')
-          li(role='presentation')
-            a(role='menuitem', tabindex='-1', href='#project1', data-id='div3') Project One  
+          li#div3(role='presentation')
+            a(role='menuitem', tabindex='-1', href='#project1', data-id='div3') PoolShrk  
           li.divider(role='presentation')
-          li(role='presentation')
-            a(role='menuitem', tabindex='-1', href='#project2', data-id='div5') Project Two          
-          li.divider(role='presentation')
-          li(role='presentation')
-            a(role='menuitem', tabindex='-1', href='#project3', data-id='div7') Project Three      
-    section#aboutMe.module.parallax.parallax-1.top
+          li#div4(role='presentation')
+            a(role='menuitem', tabindex='-1', href='#project2', data-id='div5') True Spirit
+    section.module.parallax.parallax-1.top
       .container
-        h1 Andrew Cunliffe Design
+        h1 Andrew Cunliffe Design        
     section.module.content
-      h2 About Me
-      p.left A;OIJF;OIASJDFIO;JZDS;ILFJIO;ZDSJF;OIJADI;OFJA;OIDFJIOd
+      p#aboutMe
+      h2 About Me      
+      p.left I am currently a student attending General Assembly's UX Design Immersive course. The course is 10 weeks long, and I am just about to begin my fourth week. Before pursuing a careeer in UX design I have previously been a Paratrooper in the US Army's 82nd Airborne Division, worked in the finance industry, launched my own startup, and worked as a front end developer.
+        img.inline(src='/images/cemetary.jpg')
       p.verticalLine
       p.right wepoj'jfdj;sdjfkaj;dj;sdj;JASDJFH;OASHD;FHZS;DOHFOZDSJ
-    section#stockickr.module.parallax.parallax-2
+    section.module.parallax.parallax-2
       .container
         h1 stockickr
     section.module.content
-      h2 My Idea
-      p.left A;OIJF;OIASJDFIO;JZDS;ILFJIO;ZDSJF;OIJADI;OFJA;OIDFJIOd
+      p#stockickr
+      h2 Mobile Stock Trading Platform
+      p.left I am currently a student attending General Assembly's UX Design Immersive course. The course is 10 weeks long, and I am just about to begin my fourth week. Before pursuing a careeer in UX design I have previously been a Paratrooper in the US Army's 82nd Airborne Division, worked in the finance industry, launched my own startup, and worked as a front end developer.
+        img.inline.img-responsive(src='/images/SKiOSTab.jpg')
       p.verticalLine
       p.right wepoj'jfdj;sdjfkaj;dj;sdj;JASDJFH;OASHD;FHZS;DOHFOZDSJ
-    section#project1.module.parallax.parallax-3
+    section.module.parallax.parallax-3
       .container
         h1 Project One
     section.module.content
+      p#project1
       h2 Pool Shrk
       p.left A;OIJF;OIASJDFIO;JZDS;ILFJIO;ZDSJF;OIJADI;OFJA;OIDFJIOd
       p.verticalLine
       p.right wepoj'jfdj;sdjfkaj;dj;sdj;JASDJFH;OASHD;FHZS;DOHFOZDSJ
-    section#project2.module.parallax.parallax-4
+    section.module.parallax.parallax-4
       .container
         h1 Project Two
     section.module.content
+      p#project2
       h2 True Spirit
       p.left A;OIJF;OIASJDFIO;JZDS;ILFJIO;ZDSJF;OIJADI;OFJA;OIDFJIOd
       p.verticalLine
@@ -128,8 +131,24 @@ block content
   script(src='javascripts/filters.js')
   script(src='javascripts/directives.js')  
   script(src='javascripts/ui-bootstrap-tpls.min.js')
+  script(src='javascripts/jquery.scrollTo.js')
+  script(src='javascripts/jquery.localScroll.js')
   
-
-  
+  script.
+    $(document).ready(function() {
+      $('#div1').localScroll({duration:1700});
+    });
+  script.
+    $(document).ready(function() {
+      $('#div2').localScroll({duration:1700});
+    });
+  script.
+    $(document).ready(function() {
+      $('#div3').localScroll({duration:1700});
+    });
+  script.
+    $(document).ready(function() {
+      $('#div4').localScroll({duration:1700});
+    });
   
   
