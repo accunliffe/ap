@@ -11,7 +11,7 @@ var user = require('./routes/user');
 var http = require('http');
 var path = require('path');
 
-var app = express();
+var app = module.exports = express();
 
 
 // all environments

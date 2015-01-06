@@ -27,38 +27,40 @@ block content
     section.module.content
       p#aboutMe
       h2 About Me      
-      p.left I am currently a student attending General Assembly's UX Design Immersive course. The course is 10 weeks long, and I am just about to begin my fourth week. Before pursuing a careeer in UX design I have previously been a Paratrooper in the US Army's 82nd Airborne Division, worked in the finance industry, launched my own startup, and worked as a front end developer.
+      p.left
         img.inline(src='/images/cemetary.jpg')
       p.verticalLine
-      p.right wepoj'jfdj;sdjfkaj;dj;sdj;JASDJFH;OASHD;FHZS;DOHFOZDSJ
+      p.right  I am currently a student attending General Assembly's UX Design Immersive course. The course is 10 weeks long, and I am just about to begin my fourth week. Before pursuing a careeer in UX design I have previously been a Paratrooper in the US Army's 82nd Airborne Division, worked in the finance industry, launched my own startup, and worked as a front end developer.
     section.module.parallax.parallax-2
       .container
         h1 stockickr
     section.module.content
       p#stockickr
       h2 Mobile Stock Trading Platform
-      p.left I am currently a student attending General Assembly's UX Design Immersive course. The course is 10 weeks long, and I am just about to begin my fourth week. Before pursuing a careeer in UX design I have previously been a Paratrooper in the US Army's 82nd Airborne Division, worked in the finance industry, launched my own startup, and worked as a front end developer.
-        img.inline.img-responsive(src='/images/SKiOSTab.jpg')
+      p.left
+        img.inline.ts(src='/images/SKiOS1stScreenTab.png')
       p.verticalLine
-      p.right wepoj'jfdj;sdjfkaj;dj;sdj;JASDJFH;OASHD;FHZS;DOHFOZDSJ
+      p.right I came up with the idea of a social stock trading application while I was actively trading securities and blogging my trades.
     section.module.parallax.parallax-3
       .container
         h1 Project One
     section.module.content
       p#project1
-      h2 Pool Shrk
-      p.left A;OIJF;OIASJDFIO;JZDS;ILFJIO;ZDSJF;OIJADI;OFJA;OIDFJIOd
+      h2 PoolShrk
+      p.left
+        img.inline(src='/images/poolShrk.png')          
       p.verticalLine
-      p.right wepoj'jfdj;sdjfkaj;dj;sdj;JASDJFH;OASHD;FHZS;DOHFOZDSJ
+      p.right This was our first project at UXDi, designed and presented during the first week. It was done all by hand, all sketching, no digetizing. Our task was to partner up and find a piece of our partner's life that could be improved with a mobile application.<br><br>My partner Ross wanted to get better at pool, so I designed an app where the user takes takes a picture of the table, answers whether he is playing stripes or solids, then determines what the best shot is for him to take, then tells him how and where to strike the Q-ball. 
     section.module.parallax.parallax-4
       .container
         h1 Project Two
     section.module.content
       p#project2
       h2 True Spirit
-      p.left A;OIJF;OIASJDFIO;JZDS;ILFJIO;ZDSJF;OIJADI;OFJA;OIDFJIOd
+      p.left
+        img.inline.ts(src='/images/1trueSpirit0.png')
       p.verticalLine
-      p.right wepoj'jfdj;sdjfkaj;dj;sdj;JASDJFH;OASHD;FHZS;DOHFOZDSJ
+      p.right Our second project was to design an ecommerce site for a school uniform retailer, based on the needs of personas outlined in the project's brief, as well as by interviewing real users on our own.
      nav.navbar#footer.row-fluid
       .iconwrap
         p#float-l Connect With Me on LinkedIn
@@ -72,20 +74,17 @@ block content
         h3.navtext1.hidden-phone Andrew Cunliffe Design (Under Construction)
         img.logo2(src='/images/logo1.png')
         ul#menu.dropdown-menu.dropdown-menu-left(role='menu', aria-labelledby='dropdownMenu1')
-          li(role='presentation')
-            a(role='menuitem', tabindex='-1', href='#', data-id='div1') About Me
+          li#div1(role='presentation')
+            a(role='menuitem', tabindex='-1', href='#aboutMe', data-id='div1') About Me
           li.divider(role='presentation')
-          li(role='presentation')
-            a(role='menuitem', tabindex='-1', href='#', data-id='div2') stockickr  
+          li#div2(role='presentation')
+            a(role='menuitem', tabindex='-1', href='#stockickr', data-id='div2') stockickr  
           li.divider(role='presentation')
-          li(role='presentation')
-            a(role='menuitem', tabindex='-1', href='#', data-id='div3') Web and Mobile Design  
+          li#div3(role='presentation')
+            a(role='menuitem', tabindex='-1', href='#project1', data-id='div3') PoolShrk  
           li.divider(role='presentation')
-          li(role='presentation')
-            a(role='menuitem', tabindex='-1', href='#', data-id='div5') Logo Design                 
-          li.divider(role='presentation')
-          li(role='presentation')
-            a(role='menuitem', tabindex='-1', href='#', data-id='div7') Reach Out
+          li#div4(role='presentation')
+            a(role='menuitem', tabindex='-1', href='#project2', data-id='div5') True Spirit
   .container-fluid.maindiv.show-phone.show-tablet.hidden-desktop#pbox
     section.module.parallax.parallax-1.img-responsive
       .container
