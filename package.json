@@ -9,7 +9,8 @@
     "express": "3.6.0",
     "jade": "*",
     "stylus": "*",
-    "newrelic": "*"
+    "angular": "*",
+
   },
   "subdomain": "accunliffe",
   "engines": {
